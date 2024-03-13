@@ -1,0 +1,89 @@
+body {
+  font-family: "helvetica", "light";
+}
+
+.white-bg {
+  background-color: #f1f3ff;
+}
+
+.green-btn {
+  background-color: #5cb85f;
+}
+
+.blue-bg {
+  background-color: #0d28a6;
+}
+
+.color-icon {
+  color: #0d28a6;
+}
+
+.logo {
+  height: 30px;
+  width: 90px;
+  background-color: #0d28a6;
+}
+
+.bg-car-main {
+  background-color: #0d28a6;
+  height: 75%;
+  width: 100%;
+  border-radius: 40% 0 0 0;
+  /* position: relative; */
+}
+
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+}
+.testimonial {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease;
+}
+
+.prev:hover {
+  background-color: #5cb85f;
+  color: #f1f3ff;
+  transition: 0.6s;
+}
+
+.next:hover {
+  background-color: #5cb85f;
+  color: #f1f3ff;
+  transition: 0.6s;
+}
+
+.button_link:hover {
+  background-color: #0a800e;
+  transition: 0.6s;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  /* width: 10px; */
+  width: 0;
+  height: 2px;
+  background-color: #0a800e;
+  bottom: 0;
+  transition: 1s;
+}
+
+.item:hover::before {
+  display: block;
+  width: 50px;
+  transition: 0.7s;
+}
+
+.why-us-item:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
